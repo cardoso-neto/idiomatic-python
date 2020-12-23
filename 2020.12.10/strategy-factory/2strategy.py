@@ -39,11 +39,12 @@ if __name__ == "__main__":
     data = 666
 
     if info == "circle":
-        CircleDrawer().draw(data)
+        chosen_drawer = CircleDrawer()
     elif info == "square":
-        SquareDrawer().draw(data)
+        chosen_drawer = SquareDrawer()
     elif info == "curly":
-        CurlyDrawer().draw(data)
+        chosen_drawer = CurlyDrawer()
     else:
-        Drawer().draw(data)
-    
+        chosen_drawer = Drawer()
+
+    chosen_drawer.draw(data)
