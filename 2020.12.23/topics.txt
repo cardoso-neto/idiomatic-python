@@ -1,0 +1,20 @@
+Memoization is storing values returned by expensive function calls to reuse
+later (usually in a look-up table), so it doesn't need to be recalculated.
+see memoiz*.py files
+
+
+map
+built-in function, applies a function on every element of an iterable.
+new_iterable = map(function, iterable)
+is equivalent to
+new_iterable = (function(x) for x in interable)
+It is lazily-evaluated (https://en.wikipedia.org/wiki/Lazy_evaluation) and it is
+a very memory-efficient alternative to loops because of that.
+Synonyms: apply, transform.
+see mapping*.py
+
+Tangential to map, but closely related are the following functional programming
+functions: filter, zip, reduce.
+Standard library itertools are similar.
+Third party library toolz/cytoolz is also relevant for more functional
+programming stuff. 
