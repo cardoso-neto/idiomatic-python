@@ -1,0 +1,34 @@
+- Pq tu sempre abre o __init__ com um super() se nao tem nada?
+Príncipios de orientação a objetos.
+Todos objetos têm um pai, então se respeita a hierarquia sempre
+chamando o pai.
+Exceção: quando o comportamento do pai é indesejável.  
+
+
+- @staticmethod 
+- Method could be a function (no-self-use)
+Métodos que não necessitam do estado interno de uma instância de classe
+(i.e., não usam o self) merecem que deixemos claro que esse uso não acontece,
+seja usando staticmethod e mantendo dentro da classe, ou extraindo-o para uma
+função.
+
+
+- Qual a diferença entre self e cls mesmo?
+self: acessa estado (atributos) de uma instância de classe
+cls: acessa estado de uma classe.
+see cls_self.py
+
+
+- Too few public methods (1/2) (too-few-public-methods)
+Just a warning, nothing to worry about.
+Geralmente não queremos escrever uma classe só por um método, meio desperdício
+porque poderia ser uma função. Não é uma regra também. Às vezes se faz
+necessário porque sabemos que vamos adicionar mais métodos posteriormente,
+ou para cumprir os requisitos da arquitetura (e.g., num strategy pattern).
+
+
+@property
+    def std(self):
+        pass
+propriedades calculáveis!
+see property.py
