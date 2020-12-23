@@ -1,10 +1,10 @@
 from typing import Iterator, List
 
 # run create_large_file.sh first
-file_handler = open("large-file.txt")  # lazy
+file_handler = open("large-file.dump")  # lazy
 exit()
 # consumes the iterator, loads all data into RAM
-file_handler = open("large-file.txt").read()
+file_handler = open("large-file.dump").read()
 
 # list comprehension
 list_of_lines: List[str] = [x for x in file_handler]
