@@ -1,13 +1,14 @@
+Caching properties.
 Memoization is storing values returned by expensive function calls to reuse
 later (usually in a look-up table), so it doesn't need to be recalculated.
 see memoiz*.py files
 
 
-map
+map()
 built-in function, applies a function on every element of an iterable.
 new_iterable = map(function, iterable)
 is equivalent to
-new_iterable = (function(x) for x in interable)
+new_iterable = (function(x) for x in iterable)
 It is lazily-evaluated (https://en.wikipedia.org/wiki/Lazy_evaluation) and it is
 a very memory-efficient alternative to loops because of that.
 Synonyms: apply, transform.

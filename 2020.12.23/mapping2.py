@@ -1,10 +1,10 @@
 from typing import Iterator, List
 
+
 # run create_large_file.sh first
 file_handler = open("large-file.dump")  # lazy
-exit()
 # consumes the iterator, loads all data into RAM
-file_handler = open("large-file.dump").read()
+# file_handler = open("large-file.dump").read()  # slow
 
 # list comprehension
 list_of_lines: List[str] = [x for x in file_handler]
@@ -26,4 +26,4 @@ if __name__ == "__main__":
 
     first_line = next(parsed_lines)
     print(first_line)
-    # Some text       9
+    # ΣOME TEXT       9

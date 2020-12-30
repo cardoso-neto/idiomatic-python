@@ -5,9 +5,11 @@ from operator import methodcaller
 names = ["matheus", "nelson"]
 
 capitalized_names = [x.upper() for x in names]
+print(capitalized_names)
+# ["MATHEUS", "NELSON"]
+
 capitalized_names = map(lambda x: x.upper(), names)
 capitalized_names = map(methodcaller("upper"), names)
-
 print(capitalized_names)
 # <map object at 0xffffffffffff>
 
@@ -25,9 +27,9 @@ print([name for name in capitalized_names])
 # not "yield" anymore.
 
 numbers = iter([1, 2])
-next(numbers)  # number.__next__()
+print(next(numbers))  # number.__next__()
 # 1
-next(numbers)
+print(next(numbers))
 # 2
 next(numbers)
 # StopIteration
